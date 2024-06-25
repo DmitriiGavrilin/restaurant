@@ -10,6 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
           rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/main.css">
     <title>Restaurant</title>
 </head>
@@ -41,7 +48,7 @@
                     бронирования
                 </div>
             </div>
-            <button class=" header-button button">Заказать столик</button>
+            <button class=" header-button button" id="headerButton">Заказать столик</button>
             <div class="header-burger-menu">
                 <a href=""><img src="images/icons/burger-menu.png" alt="Burger Menu"></a>
             </div>
@@ -49,7 +56,7 @@
         <div class="header-bottom">
             <h1 class="header-bottom-title">Добро пожаловать в <br> <span>Наш ресторан</span></h1>
             <p class="header-subtitle">ДОМ ЛУЧШЕЙ ЕДЫ</p>
-            <button class=" header-bottom-button button">Посмотреть меню</button>
+            <button class=" header-bottom-button button" id="headerBottomButton">Посмотреть меню</button>
         </div>
     </div>
 </header>
@@ -185,7 +192,7 @@
                 <div class="menu-item-desc">Максимально толстый <br>
                     слой мяса
                 </div>
-                <button class=" menu-button button">ЗАКАЗАТЬ</button>
+                <button class="menu-button button">ЗАКАЗАТЬ</button>
             </div>
         </div>
     </div>
@@ -193,33 +200,45 @@
 
 <section class="feedback">
     <div class="container">
-        <div class="feedback-inner">
-            <div class="feedback-item">
-                <div class="feedback-text">Я надолго запомню мой День рождения, проведённый в этом ресторане! Кусочек
-                    родной Армении!!! Отдельное спасибо за комплепент в виде фруктовой тарелки. Будем рекомендовать этот
-                    ресторан своим друзьям и родственникам также за рубежом, путешествующих в Санкт-Петербург!!!
+        <div class="feedback-inner" id="feedbackSlider">
+            <div class="feedback-slide">
+                <div class="feedback-item">
+                    <div class="feedback-text">Я надолго запомню мой День рождения, проведённый в этом ресторане!
+                        Кусочек
+                        родной Армении!!! Отдельное спасибо за комплепент в виде фруктовой тарелки. Будем рекомендовать
+                        этот
+                        ресторан своим друзьям и родственникам также за рубежом, путешествующих в Санкт-Петербург!!!
+                    </div>
+                    <img src="images/beard.png" alt="Beard" class="feedback-item-image">
+                    <div class="feedback-item-position">Посетитель</div>
+                    <div class="feedback-item-name">Николай</div>
                 </div>
-                <img src="images/beard.png" alt="Beard" class="feedback-item-image">
-                <div class="feedback-item-position">Посетитель</div>
-                <div class="feedback-item-name">Николай</div>
             </div>
-            <div class="feedback-item">
-                <div class="feedback-text">Я надолго запомню мой День рождения, проведённый в этом ресторане! Кусочек
-                    родной Армении!!! Отдельное спасибо за комплепент в виде фруктовой тарелки. Будем рекомендовать этот
-                    ресторан своим друзьям и родственникам также за рубежом, путешествующих в Санкт-Петербург!!!
+            <div class="feedback-slide">
+                <div class="feedback-item">
+                    <div class="feedback-text">Я надолго запомню мой День рождения, проведённый в этом ресторане!
+                        Кусочек
+                        родной Армении!!! Отдельное спасибо за комплепент в виде фруктовой тарелки. Будем рекомендовать
+                        этот
+                        ресторан своим друзьям и родственникам также за рубежом, путешествующих в Санкт-Петербург!!!
+                    </div>
+                    <img src="images/beard.png" alt="Beard" class="feedback-item-image">
+                    <div class="feedback-item-position">Официант</div>
+                    <div class="feedback-item-name">Валентин</div>
                 </div>
-                <img src="images/beard.png" alt="Beard" class="feedback-item-image">
-                <div class="feedback-item-position">Посетитель</div>
-                <div class="feedback-item-name">Николай</div>
             </div>
-            <div class="feedback-item">
-                <div class="feedback-text">Я надолго запомню мой День рождения, проведённый в этом ресторане! Кусочек
-                    родной Армении!!! Отдельное спасибо за комплепент в виде фруктовой тарелки. Будем рекомендовать этот
-                    ресторан своим друзьям и родственникам также за рубежом, путешествующих в Санкт-Петербург!!!
+            <div class="feedback-slide">
+                <div class="feedback-item">
+                    <div class="feedback-text">Я надолго запомню мой День рождения, проведённый в этом ресторане!
+                        Кусочек
+                        родной Армении!!! Отдельное спасибо за комплепент в виде фруктовой тарелки. Будем рекомендовать
+                        этот
+                        ресторан своим друзьям и родственникам также за рубежом, путешествующих в Санкт-Петербург!!!
+                    </div>
+                    <img src="images/beard.png" alt="Beard" class="feedback-item-image">
+                    <div class="feedback-item-position">Уборщик</div>
+                    <div class="feedback-item-name">Василий</div>
                 </div>
-                <img src="images/beard.png" alt="Beard" class="feedback-item-image">
-                <div class="feedback-item-position">Посетитель</div>
-                <div class="feedback-item-name">Николай</div>
             </div>
         </div>
         <div class="feedback-dots"></div>
